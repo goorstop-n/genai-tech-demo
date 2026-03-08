@@ -120,7 +120,7 @@ def main(cfg: DictConfig):
     # print(f"GPT's total num of parameters: {total_params:,}.")
 
     # 在Pre-train前，先看下模型进行文字接龙的输出；
-    prompt = "How it happened?"
+    prompt = "Who are you?"
     input = text_to_token_tensor(tokenizer, prompt)
     output = generate_text(
         model=gpt,

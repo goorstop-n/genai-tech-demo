@@ -1,4 +1,4 @@
-context_length: 256   # 模型支持的最长上下文，这里定义为1k；
+context_length: 1024   # 模型支持的最长上下文，这里定义为1k；
 emb_dim: 768   # wte和wpe Embedding维度；
 dropout: 0.1   # dropout比例；
 n_heads: 12   # 模型自注意力头的数量；
