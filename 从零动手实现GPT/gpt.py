@@ -40,7 +40,7 @@ class MaskedMultiHeadAttention(nn.Module):
 
         # dropout；
         self.attn_dropout = nn.Dropout(dropout)
-        self.resid_dropout = nn.Dropout(dropout)
+        self.proj_dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         # batch_size、context_length、emb_dim；
@@ -77,7 +77,7 @@ class MaskedMultiHeadAttention(nn.Module):
 
         # output projection
         # shape: [batch_size, context_length, emb_dim]
-        y = self.resid_dropout(self.c_proj(y))
+        y = self.proj_dropout(self.c_proj(y))
 
         return y
 
@@ -175,7 +175,6 @@ class Transformer(nn.Module):
 
     def forward(self, inputs):
         device = inputs.device
-
         B, T = inputs.size()
 
         te = self.wte(inputs)
