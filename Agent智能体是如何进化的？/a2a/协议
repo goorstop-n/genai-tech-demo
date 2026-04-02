@@ -24,6 +24,7 @@ Accept-Encoding: gzip, deflate
 Content-Type: application/json
 
 {"id":"0a97a43d-cded-4ed2-a660-38331ba98976","jsonrpc":"2.0","method":"message/send","params":{"configuration":{"acceptedOutputModes":[],"blocking":true},"message":{"contextId":"1aae4ae6-a422-4e37-9cd9-d3c83a8a4d8e","kind":"message","messageId":"2b53cd71-c811-4d1a-81f5-2b786add98a7","parts":[{"kind":"text","text":"北京的天气怎么样？"}],"role":"user"}}}
+
 HTTP/1.1 200 OK
 date: Thu, 02 Apr 2026 06:33:58 GMT
 server: uvicorn
