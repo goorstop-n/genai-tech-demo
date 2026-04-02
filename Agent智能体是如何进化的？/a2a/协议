@@ -5,7 +5,6 @@ Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: keep-alive
 
-
 HTTP/1.1 200 OK
 date: Thu, 02 Apr 2026 06:28:29 GMT
 server: uvicorn
@@ -13,6 +12,8 @@ content-length: 437
 content-type: application/json
 
 {"capabilities":{"streaming":false},"defaultInputModes":["text"],"defaultOutputModes":["text"],"description":"提供某地的天气预报","name":"Weather Agent","preferredTransport":"JSONRPC","protocolVersion":"0.3.0","skills":[{"description":"给出某地的天气预报","examples":["北京的天气怎么样？"],"id":"天气预报","name":"天气预报","tags":["天气","预报"]}],"url":"http://127.0.0.1:10000","version":"1.0.0"}
+
+
 
 POST / HTTP/1.1
 Host: 127.0.0.1:10000
