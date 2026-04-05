@@ -1,4 +1,4 @@
-请求: {"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"Cline","version":"3.76.0"}},"jsonrpc":"2.0","id":0}
+请求: {"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"Cline","version":"3.77.0"}},"jsonrpc":"2.0","id":0}
 响应: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2025-11-25","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"weather","version":"1.26.0"}}}
 请求: {"method":"notifications/initialized","jsonrpc":"2.0"}
 请求: {"method":"tools/list","jsonrpc":"2.0","id":1}
